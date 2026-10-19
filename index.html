@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Никита Садовников — Product Owner, бизнес/системный аналитик</title>
+  <meta name="description" content="Product Owner и бизнес/системный аналитик: e-commerce, финтех, маркетплейсы. Портфолио проектов и полное резюме.">
+  <meta property="og:title" content="Никита Садовников — Product Owner, бизнес/системный аналитик">
+  <meta property="og:description" content="Портфолио проектов и полное резюме.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar__inner">
+      <a class="brand" href="#top" aria-label="В начало">
+        <span class="brand__mark">НС</span>
+        <span class="brand__name">Никита Садовников</span>
+      </a>
+      <nav class="nav" aria-label="Разделы">
+        <a href="#projects">Портфолио</a>
+        <a href="#experience">Опыт</a>
+        <a href="#skills">Навыки</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <div class="topbar__actions">
+        <button class="icon-btn" id="print" type="button" title="Сохранить резюме в PDF" aria-label="Сохранить резюме в PDF">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+        </button>
+        <button class="icon-btn" id="theme" type="button" title="Сменить тему" aria-label="Сменить тему">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero wrap">
+      <p class="eyebrow">Москва · 5+ лет в продукте и аналитике · открыт к предложениям</p>
+      <h1>Никита Садовников</h1>
+      <p class="hero__roles">Product Owner <span>·</span> бизнес / системный аналитик <span>·</span> AI Product Engineer</p>
+      <p class="hero__lead">
+        Довожу продукты от идеи до продакшна: исследую процессы, проектирую данные, интеграции и&nbsp;API,
+        собираю команду и сам прототипирую решения с&nbsp;помощью AI. Работал в&nbsp;Альфа-Банке, ВТБ, OZON,
+        строил с&nbsp;нуля B2B-маркетплейс и&nbsp;реферальный HR-сервис.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="https://t.me/nikita_sadovnikov">Написать в Telegram</a>
+        <a class="btn" href="mailto:n.s.sadovnikov@yandex.ru">n.s.sadovnikov@yandex.ru</a>
+      </div>
+
+      <ul class="stats" aria-label="Результаты">
+        <li><b>минуты</b><span>вместо часов на подготовку товарных фидов к загрузке в PIM, Альфа-Банк</span></li>
+        <li><b>8 мес</b><span>от концепции до веба и мобильного приложения в продакшне, Молва</span></li>
+        <li><b>+23%</b><span>activation rate за счёт упрощения user flow, Молва</span></li>
+        <li><b>+13%</b><span>средний чек после редизайна корзины и карточки, B2B-маркетплейс</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ FOCUS ============ -->
+    <section class="wrap section" aria-labelledby="focus-title">
+      <h2 class="section__title" id="focus-title"><span class="num">01</span>Чем могу быть полезен</h2>
+      <div class="focus">
+        <article>
+          <h3>Продукт</h3>
+          <p>Концепция, бизнес-модель, CJM по ролям, бэклог и приоритизация. CustDev, метрики и
+            проверка гипотез: activation, conversion, MAU, retention. Сборка команды полного цикла и&nbsp;Scrum.</p>
+        </article>
+        <article>
+          <h3>Анализ и архитектура</h3>
+          <p>AS-IS / TO-BE в BPMN, sequence- и state-диаграммы, ER-модели, контракты API, интеграции
+            на REST и&nbsp;Kafka. ADR, C4, оценка стоимости владения — курс Solution Architect (2026).</p>
+        </article>
+        <article>
+          <h3>AI-прототипирование</h3>
+          <p>Собираю работающие прототипы до дизайна и разработки: требования и бизнес-логика мои,
+            код генерируется по ним. Так сделаны все проекты ниже — от игры до сервиса с LLM-конвейером.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="wrap section" id="projects" aria-labelledby="projects-title">
+      <h2 class="section__title" id="projects-title"><span class="num">02</span>Портфолио</h2>
+
+      <div class="filters" role="group" aria-label="Фильтр проектов">
+        <button type="button" class="chip is-active" data-filter="all">Все</button>
+        <button type="button" class="chip" data-filter="product">Продукты</button>
+        <button type="button" class="chip" data-filter="arch">Архитектурные кейсы</button>
+        <button type="button" class="chip" data-filter="fun">Для души</button>
+      </div>
+
+      <div class="projects">
+        <article class="card card--wide" data-kind="product">
+          <div class="card__head">
+            <span class="card__kicker">CPO / Product Owner · 2023–2025</span>
+            <h3>Молва — реферальный найм</h3>
+          </div>
+          <p>Сервис «приведи друга» для HR-фрилансеров: компания платит за успешный найм, агент получает
+            вознаграждение за рекомендацию. Сделан с нуля, от концепции до веб-версии и мобильного приложения
+            в продакшне за 8 месяцев. Отвечал за бизнес-модель, CJM для каждой роли, схемы данных и API,
+            собрал команду: дизайн, аналитика, фронт, бэк, QA.</p>
+          <ul class="metrics">
+            <li><b>+23%</b> activation rate</li>
+            <li><b>−13%</b> time to first action</li>
+            <li><b>+14%</b> conversion to hire</li>
+            <li><b>+36%</b> MAU</li>
+          </ul>
+          <ul class="tags"><li>Flutter</li><li>Go</li><li>PostgreSQL</li><li>React</li><li>BI</li><li>Scrum</li></ul>
+          <div class="card__links">
+            <a href="https://molva.io">molva.io ↗</a>
+            <span class="muted">код закрыт</span>
+          </div>
+        </article>
+
+        <article class="card" data-kind="product">
+          <div class="card__head">
+            <span class="card__kicker">Pet-проект · 2026</span>
+            <h3>Гант-трекер</h3>
+          </div>
+          <p>Командный таск-трекер с диаграммой Ганта: задачи любой вложенности, зависимости с автосдвигом
+            цепочки, расчёт переработки по часам, импорт из Excel и Google Таблиц с автоопределением структуры.
+            Изоляция команд — политиками RLS в Postgres, правки приходят в реальном времени.</p>
+          <ul class="tags"><li>React</li><li>TypeScript</li><li>Supabase</li><li>RLS</li><li>Realtime</li></ul>
+          <div class="card__links">
+            <a href="https://sadovnikovsgant.n-s-sadovnikov2.workers.dev">Открыть ↗</a>
+            <span class="muted">код закрыт</span>
+          </div>
+        </article>
+
+        <article class="card" data-kind="product">
+          <div class="card__head">
+            <span class="card__kicker">Pet-проект · 2026</span>
+            <h3>Scena — куда идти за корзиной</h3>
+          </div>
+          <p>Пользователь пишет покупки своими словами, указывает адрес — сервис подбирает товары в каждой сети,
+            считает корзину целиком и объясняет выбор магазина. Конвейер: разбор намерений локальной LLM,
+            лексический отсев, эмбеддинги, оптимизатор маршрута. Без модели работает на детерминированном разборе.</p>
+          <ul class="tags"><li>Python</li><li>FastAPI</li><li>Ollama</li><li>bge-m3</li><li>React</li></ul>
+          <div class="card__links">
+            <a href="https://scena-preview.pages.dev">Демо интерфейса ↗</a>
+            <span class="muted">код закрыт</span>
+          </div>
+        </article>
+
+        <article class="card" data-kind="product">
+          <div class="card__head">
+            <span class="card__kicker">Pet-проект · 2026</span>
+            <h3>Сервис спонтанных встреч</h3>
+          </div>
+          <p>Поиск компании «здесь и сейчас»: анкеты, лента, мэтчи с двумя намерениями — дружеским и романтическим,
+            чат, групповые встречи по инвайт-ссылкам, верификация по селфи, 21+. Модель безопасности RLS-first:
+            права доступа живут в базе, привилегированные операции — в отдельном сервисе. Есть админка модерации.</p>
+          <ul class="tags"><li>React</li><li>Tailwind</li><li>Supabase</li><li>Postgres RLS</li></ul>
+          <div class="card__links">
+            <span class="muted">закрытое тестирование · демо по запросу</span>
+          </div>
+        </article>
+
+        <article class="card" data-kind="arch">
+          <div class="card__head">
+            <span class="card__kicker">Solution Architect · Яндекс Практикум</span>
+            <h3>Банк для МСБ: 18 AI-инициатив</h3>
+          </div>
+          <p>Триаж 18 инициатив топ-менеджмента: что решается ML, что обычной программой, что блокирует комплаенс.
+            Для флагмана (приоритизация проверки подозрительных операций) — ADR, C4, контракт, fallback, мониторинг,
+            TCO ≈ 60 млн ₽ за 2 года и план пилота с критериями остановки.</p>
+          <ul class="tags"><li>ADR</li><li>C4</li><li>TCO</li><li>ML-архитектура</li></ul>
+          <div class="card__links"><a href="https://github.com/nssadovnikov2/Solution-AI-Sprint7">GitHub ↗</a></div>
+        </article>
+
+        <article class="card" data-kind="arch">
+          <div class="card__head">
+            <span class="card__kicker">Solution Architect · Яндекс Практикум</span>
+            <h3>«Здоровье+»: интеграции клиники</h3>
+          </div>
+          <p>Разбор системных проблем перед запуском мобильного приложения: дубли записей и списаний, синхронные
+            цепочки к 1С, потеря данных между LIS и CRM. Решения: идемпотентность, саги с компенсирующими
+            транзакциями, Circuit Breaker, Rate Limiting, защита каналов.</p>
+          <ul class="tags"><li>Saga</li><li>Idempotency</li><li>Circuit Breaker</li><li>OpenAPI</li></ul>
+          <div class="card__links"><a href="https://github.com/nssadovnikov2/Solution-Health">GitHub ↗</a></div>
+        </article>
+
+        <article class="card" data-kind="arch">
+          <div class="card__head">
+            <span class="card__kicker">Solution Architect · Яндекс Практикум</span>
+            <h3>FinUnion: слияние двух банков</h3>
+          </div>
+          <p>Архитектура данных после объединения: бизнес-сущности и логическая модель, мастер-системы и владельцы
+            данных, потоки и зависимости, целевая DWH / Lakehouse, дата-продукты, план миграции с cutover
+            и дорожная карта.</p>
+          <ul class="tags"><li>MDM</li><li>DWH</li><li>Lakehouse</li><li>Миграция</li></ul>
+          <div class="card__links"><a href="https://github.com/nssadovnikov2/Solution-FinUnion-Data-Merger-">GitHub ↗</a></div>
+        </article>
+
+        <article class="card" data-kind="fun">
+          <div class="card__head">
+            <span class="card__kicker">Браузерная игра · 2026</span>
+            <h3>LABYR — пять ночей в лабиринте</h3>
+          </div>
+          <p>Пошаговый хоррор: игрок ищет выход из сгенерированного лабиринта, аниматроники ищут игрока.
+            Семь ночей с растущей сложностью. Без сборки и бэкенда — ES-модули, Canvas и CSS-графика;
+            отдельный дизайн-документ про режиссуру страха и экономику хода.</p>
+          <ul class="tags"><li>JavaScript</li><li>Canvas</li><li>Game design</li></ul>
+          <div class="card__links">
+            <a href="https://nssadovnikov2.github.io/labyr/">Играть ↗</a>
+            <a href="https://github.com/nssadovnikov2/labyr">GitHub ↗</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="note">Артефакты аналитика — BPMN, sequence, ER, CJM, вайрфреймы — собраны на
+        <a href="https://miro.com/app/board/uXjVNl6BcDE=/">доске в Miro ↗</a></p>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="wrap section" id="experience" aria-labelledby="exp-title">
+      <h2 class="section__title" id="exp-title"><span class="num">03</span>Опыт работы <small>5 лет 5 месяцев</small></h2>
+
+      <ol class="timeline">
+        <li class="job">
+          <div class="job__when">авг 2025 — сейчас</div>
+          <div class="job__body">
+            <h3>Product Owner интеграций с внешними ИС</h3>
+            <p class="job__org">Альфа-Банк · e-commerce платформа</p>
+            <p class="job__result">Спроектировал и реализовал автоматизацию подготовки товарных фидов к загрузке в PIM
+              и бэкофис: обработка данных сократилась с нескольких часов до минут.</p>
+            <details>
+              <summary>Подробнее</summary>
+              <ul>
+                <li>Исследовал процессы получения товарных данных от CPA-сетей и селлеров, находил ручные операции и узкие места.</li>
+                <li>Описывал процессы AS-IS / TO-BE в BPMN, взаимодействие компонентов — в sequence-диаграммах UML.</li>
+                <li>Прорабатывал интеграции с PIM, бэкофисом, CPA-сетями и системами селлеров; определял контракты и проектировал API-методы.</li>
+                <li>Проектировал модель данных в ER-диаграммах и статусную модель товара.</li>
+                <li>Формализовал правила обработки: дедупликация, валидация, нормализация, категоризация, атрибутизация, SKU/SPU, преобразование ссылок.</li>
+                <li>Писал ТЗ и декомпозировал их на задачи, согласовывал решения с заказчиками и разработкой.</li>
+                <li>Оценивал трудозатраты и экономический эффект, выбирал вариант реализации с учётом стоимости поддержки и корпоративного ландшафта.</li>
+                <li>Принимал функциональность: соответствие требованиям, сценарии, edge cases.</li>
+                <li>AI использовал как инструмент реализации — генерация кода по требованиям, поиск edge cases, аудит. Требования, логика, архитектура и приёмка — мои.</li>
+              </ul>
+            </details>
+          </div>
+        </li>
+
+        <li class="job">
+          <div class="job__when">дек 2023 — авг 2025</div>
+          <div class="job__body">
+            <h3>CPO / Product Owner</h3>
+            <p class="job__org">Молва групп · <a href="https://molva.io">molva.io</a></p>
+            <p class="job__result">С нуля, от концепции, запустил реферальный сервис для HR-фрилансеров: веб-версия
+              и мобильное приложение в продакшне за 8 месяцев.</p>
+            <details>
+              <summary>Подробнее</summary>
+              <p>Домены: личный кабинет, админка, BI-аналитика, маркетинговые сценарии (пуши, рассылки), авторизация, финансы.</p>
+              <p><b>Метрики:</b></p>
+              <ul>
+                <li>Activation rate +23% (агенты, сделавшие первую рекомендацию) — упрощение user flow;</li>
+                <li>Time to first action −13%;</li>
+                <li>Conversion to hire +14% — интеграция с ИС заказчика;</li>
+                <li>MAU +36% — интеграция сервиса нотификаций.</li>
+              </ul>
+              <p><b>Что сделал:</b></p>
+              <ul>
+                <li>Собрал команду полного цикла: дизайн, бизнес- и системная аналитика, фронтенд, бэкенд, тестирование.</li>
+                <li>Внедрил продуктовую методологию: трекинг задач, демо, канбан, метки приоритетов; Scrum с бэклогом, спринтами и ретро.</li>
+                <li>Ввёл практику прототипирования через нейросети до этапа дизайна.</li>
+                <li>Разработал концепцию, бизнес-модель, флоу и CJM для каждой роли; UX-сценарии и прототипы в Miro.</li>
+                <li>Участвовал в проектировании архитектуры, схем БД и API; документация в Яндекс Трекере и Вики.</li>
+                <li>Вместе с командой выбрал стек: Flutter, Go, PostgreSQL, React.</li>
+                <li>Участвовал в подготовке правовых документов: ToS, политика конфиденциальности и хранения персональных данных.</li>
+              </ul>
+            </details>
+          </div>
+        </li>
+
+        <li class="job">
+          <div class="job__when">мар 2024 — авг 2025</div>
+          <div class="job__body">
+            <h3>Руководитель отдела бизнес / системной аналитики</h3>
+            <p class="job__org">Эссистенс ИТ Солюшенс · iGaming-платформа Olimpbet</p>
+            <p class="job__result">Сервисы геймификации, авторизации, дашборды безопасности, управление контентом,
+              CMS-админка. Выстроил процессы отдела аналитики.</p>
+            <details>
+              <summary>Подробнее</summary>
+              <ul>
+                <li>Разработал внутренние процессы подразделения; планировал работу, контролировал, обучал и мотивировал сотрудников.</li>
+                <li>Разрабатывал бизнес-алгоритмы в рамках задач и эпиков.</li>
+                <li>Проектировал концептуальную, логическую и физическую модели БД (ER-диаграммы в dbdiagram.io).</li>
+                <li>BPMN-схемы процессов, sequence-диаграммы в PlantUML, CJM в виде вайрфреймов.</li>
+                <li>Писал функциональные и нефункциональные требования, use cases, user stories, системные требования.</li>
+                <li>Выстроил информационную поддержку саппорт-юнита; тестировал фичи на развёрнутых ветках.</li>
+                <li>Стек проекта: Vue 3, Go / Python, GraphQL, REST API, Kafka, PostgreSQL; Confluence, YouTrack, GitLab, Postman.</li>
+              </ul>
+            </details>
+          </div>
+        </li>
+
+        <li class="job">
+          <div class="job__when">июл 2023 — мар 2024</div>
+          <div class="job__body">
+            <h3>Бизнес-аналитик</h3>
+            <p class="job__org">Банк ВТБ · небанковские сервисы для бизнеса</p>
+            <p class="job__result">Решения для клиентов-юрлиц в канальном приложении, в том числе пролонгация
+              подписки на небанковский сервис.</p>
+            <details>
+              <summary>Подробнее</summary>
+              <ul>
+                <li>Функциональные и нефункциональные требования, use cases, user stories в Confluence и Jira.</li>
+                <li>CJM в Miro, BPMN в Camunda, поведенческие диаграммы «пользователь — система» (frontend — backend).</li>
+                <li>Бриф внутреннего заказчика, работа с партнёрами, постановка задач дизайнерам и разработчикам.</li>
+                <li>Расчёт экономики проекта.</li>
+                <li>Интеграции между ИС на REST API и Kafka, совместные решения со смежными подразделениями; участие в проектировании модели БД.</li>
+                <li>Тестирование доработок на препрод-контурах, проведение демо.</li>
+              </ul>
+            </details>
+          </div>
+        </li>
+
+        <li class="job">
+          <div class="job__when">фев 2022 — июл 2023</div>
+          <div class="job__body">
+            <h3>Менеджер продукта, руководитель группы аналитиков</h3>
+            <p class="job__org">Модесто-Фловерс · международный B2B-маркетплейс цветов, оборот $100 млн+</p>
+            <p class="job__result">Разработка и редизайн продукта: финансовые сервисы, кабинеты покупателей, селлеров
+              и логистов, CMS, CRM. После редизайна: +11% CR «корзина → покупка», +12% повторных заказов,
+              +13% средний чек, +10–15% DAU/MAU.</p>
+            <details>
+              <summary>Подробнее</summary>
+              <ul>
+                <li>Провёл 20+ CustDev-интервью; главная проблема — низкое доверие к платформе, из-за которого контрагенты не работали через интерфейс сами.</li>
+                <li>Вместе с дизайнером переработал каталог, заказы, главную и личный кабинет: понятные статусы, меньше кликов.</li>
+                <li>Сформировал команду аналитиков и дизайнеров, планировал мощности, организовал работу разработки и QA.</li>
+                <li>Вёл бэклог и приоритизацию, эпики и стори в Jira; писал ТЗ: AS-IS / TO-BE, use case, user story.</li>
+                <li>BPMN-процессы, вайрфреймы в Figma, участие в проектировании модели БД.</li>
+                <li>Тестировал фичи через сборку веток в Docker, вёл дейли и демо, принимал релизы.</li>
+              </ul>
+            </details>
+          </div>
+        </li>
+
+        <li class="job">
+          <div class="job__when">июн 2021 — фев 2022</div>
+          <div class="job__body">
+            <h3>Data-аналитик</h3>
+            <p class="job__org">OZON · процессы селлеров и внутренняя отчётность</p>
+            <p class="job__result">Аналитика продаж, поставок и ассортимента через OLAP-кубы; отчёты и презентации для руководства.</p>
+            <details>
+              <summary>Подробнее</summary>
+              <ul>
+                <li>Сбор требований для оптимизации процессов, постановка задач в Jira, тестирование новых фич.</li>
+                <li>Участие в формировании медиаплана для селлеров.</li>
+                <li>Анализ: продажи по периодам и событиям, объёмы поставок, сравнение товарных матриц, ассортиментная политика, оборот с учётом объёмно-весовых характеристик, сезонность ниш.</li>
+              </ul>
+            </details>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="wrap section" id="skills" aria-labelledby="skills-title">
+      <h2 class="section__title" id="skills-title"><span class="num">04</span>Навыки и образование</h2>
+
+      <div class="skills">
+        <div>
+          <h3>Продукт и управление</h3>
+          <ul class="tags tags--lg"><li>Product discovery</li><li>CustDev</li><li>CJM</li><li>Продуктовые метрики</li><li>Бэклог и приоритизация</li><li>Scrum</li><li>Kanban</li><li>Сборка команды</li><li>Экономика проекта</li></ul>
+        </div>
+        <div>
+          <h3>Анализ и проектирование</h3>
+          <ul class="tags tags--lg"><li>BPMN</li><li>UML</li><li>Sequence</li><li>State diagrams</li><li>ER-модели</li><li>REST API</li><li>GraphQL</li><li>Kafka</li><li>RabbitMQ</li><li>ADR</li><li>C4</li><li>Use cases</li><li>User stories</li></ul>
+        </div>
+        <div>
+          <h3>Технический бэкграунд</h3>
+          <ul class="tags tags--lg"><li>SQL / PostgreSQL</li><li>HTML / CSS / JS</li><li>Vue.js</li><li>React</li><li>Supabase</li><li>Docker</li><li>Postman</li><li>Git</li></ul>
+        </div>
+        <div>
+          <h3>Инструменты</h3>
+          <ul class="tags tags--lg"><li>Jira</li><li>Confluence</li><li>YouTrack</li><li>Яндекс Трекер</li><li>Camunda</li><li>Miro</li><li>Figma</li><li>PlantUML</li><li>dbdiagram.io</li></ul>
+        </div>
+        <div>
+          <h3>AI в работе</h3>
+          <ul class="tags tags--lg"><li>Claude</li><li>OpenAI</li><li>DeepSeek</li><li>Kimi</li><li>Cursor</li><li>Copilot</li><li>Prompt-driven прототипирование</li><li>Локальные LLM (Ollama)</li></ul>
+        </div>
+      </div>
+
+      <div class="edu">
+        <div>
+          <h3>Образование</h3>
+          <dl class="list">
+            <dt>2011</dt>
+            <dd><b>Российский государственный университет туризма и сервиса</b>
+              Институт региональной экономики и муниципального управления, государственное и муниципальное управление</dd>
+          </dl>
+        </div>
+        <div>
+          <h3>Курсы</h3>
+          <dl class="list">
+            <dt>2026</dt><dd><b>Архитектор IT-решений</b> Яндекс Практикум</dd>
+            <dt>2022</dt><dd><b>Бизнес-аналитик</b> Яндекс Практикум</dd>
+            <dt>2021</dt><dd><b>Scrum</b> OZON</dd>
+            <dt>2018</dt><dd><b>Фронтенд-разработчик</b> Web Hero School</dd>
+            <dt>2017</dt><dd><b>Деловая коммуникация и продажи</b> Тинькофф</dd>
+          </dl>
+        </div>
+        <div>
+          <h3>Языки</h3>
+          <dl class="list">
+            <dt>RU</dt><dd><b>Русский</b> родной</dd>
+            <dt>EN</dt><dd><b>Английский</b> B2</dd>
+            <dt>ES</dt><dd><b>Испанский</b> A1</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="wrap section" aria-labelledby="about-title">
+      <h2 class="section__title" id="about-title"><span class="num">05</span>Как я работаю</h2>
+      <div class="about">
+        <p>Решения проверяю двумя вопросами: что получает бизнес и что получает пользователь. Ищу вариант, где выигрывают оба.</p>
+        <p>Итог любой деловой встречи — договорённость. Умею договариваться с заказчиками, командой и партнёрами, в том числе за счёт опыта продаж.</p>
+        <p>Отвечаю за результат, а не за документ: довожу задачу до приёмки и смотрю, как изменились метрики.</p>
+        <p>Учусь сам и быстро: от фронтенда в 2018-м до архитектуры решений в 2026-м.</p>
+      </div>
+      <p class="muted refs">Рекомендации от CPO ВТБ и CTO Модесто-Фловерс — по запросу.</p>
+    </section>
+
+    <!-- ============ CONTACTS ============ -->
+    <section class="wrap section contacts" id="contacts" aria-labelledby="contacts-title">
+      <h2 class="section__title" id="contacts-title"><span class="num">06</span>Контакты</h2>
+      <p class="contacts__lead">Полная занятость: удалённо, гибрид или офис в Москве. Готов к командировкам.</p>
+      <ul class="contact-list">
+        <li><span>Telegram</span><a href="https://t.me/nikita_sadovnikov">@nikita_sadovnikov</a></li>
+        <li><span>Почта</span><a href="mailto:n.s.sadovnikov@yandex.ru">n.s.sadovnikov@yandex.ru</a></li>
+        <li><span>GitHub</span><a href="https://github.com/nssadovnikov2">github.com/nssadovnikov2</a></li>
+        <li><span>Miro</span><a href="https://miro.com/app/board/uXjVNl6BcDE=/">артефакты аналитика</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <span>© 2026 Никита Садовников</span>
+    <a href="#top">Наверх ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
