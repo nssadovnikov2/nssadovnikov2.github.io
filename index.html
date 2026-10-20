@@ -11,13 +11,12 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script>
-    try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
+  <div class="progress" aria-hidden="true"></div>
   <header class="topbar">
     <div class="wrap topbar__inner">
       <a class="brand" href="#top" aria-label="В начало">
@@ -30,40 +29,58 @@
         <a href="#skills">Навыки</a>
         <a href="#contacts">Контакты</a>
       </nav>
-      <div class="topbar__actions">
-        <button class="icon-btn" id="print" type="button" title="Сохранить резюме в PDF" aria-label="Сохранить резюме в PDF">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
-        </button>
-        <button class="icon-btn" id="theme" type="button" title="Сменить тему" aria-label="Сменить тему">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
-        </button>
-      </div>
+      <button class="pill-btn" id="print" type="button" title="Сохранить резюме в PDF">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+        <span>PDF</span>
+      </button>
     </div>
   </header>
 
   <main id="top">
     <!-- ============ HERO ============ -->
-    <section class="hero wrap">
-      <p class="eyebrow">Москва · 5+ лет в продукте и аналитике · открыт к предложениям</p>
-      <h1>Никита Садовников</h1>
-      <p class="hero__roles">Product Owner <span>·</span> бизнес / системный аналитик <span>·</span> AI Product Engineer</p>
-      <p class="hero__lead">
-        Довожу продукты от идеи до продакшна: исследую процессы, проектирую данные, интеграции и&nbsp;API,
-        собираю команду и сам прототипирую решения с&nbsp;помощью AI. Работал в&nbsp;Альфа-Банке, ВТБ, OZON,
-        строил с&nbsp;нуля B2B-маркетплейс и&nbsp;реферальный HR-сервис.
-      </p>
-      <div class="hero__cta">
-        <a class="btn btn--primary" href="https://t.me/nikita_sadovnikov">Написать в Telegram</a>
-        <a class="btn" href="mailto:n.s.sadovnikov@yandex.ru">n.s.sadovnikov@yandex.ru</a>
+    <section class="hero">
+      <div class="hero__scene" aria-hidden="true">
+        <div class="glow" data-speed="0.25"></div>
+        <div class="slab slab--1" data-speed="0.45"></div>
+        <div class="slab slab--2" data-speed="0.2"></div>
+        <div class="slab slab--3" data-speed="0.65"></div>
+        <span class="float-tag" style="--x: 72%; --y: 16%" data-speed="0.3">BPMN</span>
+        <span class="float-tag" style="--x: 86%; --y: 38%" data-speed="0.55">API</span>
+        <span class="float-tag float-tag--red" style="--x: 64%; --y: 52%" data-speed="0.15">MVP</span>
+        <span class="float-tag" style="--x: 90%; --y: 64%" data-speed="0.4">KPI</span>
+        <span class="float-tag" style="--x: 76%; --y: 80%" data-speed="0.7">CJM</span>
+        <span class="float-tag float-tag--red" style="--x: 94%; --y: 10%" data-speed="0.85">C4</span>
       </div>
 
-      <ul class="stats" aria-label="Результаты">
-        <li><b>минуты</b><span>вместо часов на подготовку товарных фидов к загрузке в PIM, Альфа-Банк</span></li>
-        <li><b>8 мес</b><span>от концепции до веба и мобильного приложения в продакшне, Молва</span></li>
-        <li><b>+23%</b><span>activation rate за счёт упрощения user flow, Молва</span></li>
-        <li><b>+13%</b><span>средний чек после редизайна корзины и карточки, B2B-маркетплейс</span></li>
-      </ul>
+      <div class="wrap hero__content" data-speed="-0.12">
+        <p class="badge">Открыт к предложениям</p>
+        <h1>Никита<br>Садовников</h1>
+        <p class="hero__roles">Product Owner <span>/</span> бизнес&nbsp;/&nbsp;системный аналитик <span>/</span> AI&nbsp;Product&nbsp;Engineer</p>
+        <p class="hero__lead">
+          Довожу продукты от идеи до продакшна: исследую процессы, проектирую данные, интеграции и&nbsp;API,
+          собираю команду и сам прототипирую решения с&nbsp;помощью AI. Пять лет в продукте и аналитике —
+          Альфа-Банк, ВТБ, OZON, B2B-маркетплейс и реферальный HR-сервис с&nbsp;нуля. До этого восемь лет
+          руководил продажами в&nbsp;контакт-центре Тинькофф.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="https://t.me/nikita_sadovnikov"><span>Написать в Telegram</span></a>
+          <a class="btn" href="mailto:n.s.sadovnikov@yandex.ru"><span>n.s.sadovnikov@yandex.ru</span></a>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <ul class="stats" aria-label="Результаты">
+          <li><b>минуты</b><span>вместо часов на подготовку товарных фидов к загрузке в PIM, Альфа-Банк</span></li>
+          <li><b>8 мес</b><span>от концепции до веба и мобильного приложения в продакшне, Молва</span></li>
+          <li><b>+23%</b><span>activation rate за счёт упрощения user flow, Молва</span></li>
+          <li><b>+13%</b><span>средний чек после редизайна корзины и карточки, B2B-маркетплейс</span></li>
+        </ul>
+      </div>
     </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" data-marquee="-0.35">Продукт <i></i> Аналитика <i></i> Архитектура <i></i> Продажи <i></i> AI <i></i> Продукт <i></i> Аналитика <i></i> Архитектура <i></i> Продажи <i></i> AI <i></i></div>
+    </div>
 
     <!-- ============ FOCUS ============ -->
     <section class="wrap section" aria-labelledby="focus-title">
@@ -223,7 +240,7 @@
 
     <!-- ============ EXPERIENCE ============ -->
     <section class="wrap section" id="experience" aria-labelledby="exp-title">
-      <h2 class="section__title" id="exp-title"><span class="num">03</span>Опыт работы <small>5 лет 5 месяцев</small></h2>
+      <h2 class="section__title" id="exp-title"><span class="num">03</span>Опыт работы <small>13 лет 9 месяцев</small></h2>
 
       <ol class="timeline">
         <li class="job">
@@ -362,8 +379,35 @@
             </details>
           </div>
         </li>
+        <li class="job">
+          <div class="job__when">фев 2013 — май 2021</div>
+          <div class="job__body">
+            <h3>Руководитель отдела продаж контакт-центра</h3>
+            <p class="job__org">Тинькофф</p>
+            <p class="job__result">Отвечал за результат отдела продаж в колл-центре: люди, скрипты, каналы, инструменты
+              и подрядчики. Развивал аутсорсинговые контакт-центры — от методологии до того, в каком помещении сидят их операторы.</p>
+            <details>
+              <summary>Подробнее</summary>
+              <ul>
+                <li>Вёл показатели отдела: план продаж и его декомпозиция по сотрудникам, конверсия по воронке, отчётность для руководства.</li>
+                <li>Нанимал операторов и руководителей групп, выстраивал адаптацию и наставничество новичков.</li>
+                <li>Прослушивал звонки и оценивал их по чек-листам качества, давал обратную связь.</li>
+                <li>Разрабатывал и тестировал скрипты продаж и работу с возражениями.</li>
+                <li>Запускал новые каналы продаж и разрабатывал инструменты для операторов.</li>
+                <li>Рассчитывал зарплаты, строил мотивационные схемы и конкурсы.</li>
+                <li>Развивал аутсорсинговые контакт-центры: выбор и запуск подрядчиков, контроль качества и условий работы вплоть до помещений.</li>
+                <li>Писал методологии и инструкции для контакт-центров, участвовал в разработке ПО для обучения.</li>
+                <li>Проводил тренинги по продажам и менеджменту.</li>
+              </ul>
+            </details>
+          </div>
+        </li>
       </ol>
     </section>
+
+    <div class="marquee marquee--outline" aria-hidden="true">
+      <div class="marquee__track" data-marquee="0.3">Discovery <i></i> Delivery <i></i> Metrics <i></i> Integrations <i></i> Teams <i></i> Discovery <i></i> Delivery <i></i> Metrics <i></i> Integrations <i></i> Teams <i></i></div>
+    </div>
 
     <!-- ============ SKILLS ============ -->
     <section class="wrap section" id="skills" aria-labelledby="skills-title">
@@ -429,7 +473,7 @@
       <h2 class="section__title" id="about-title"><span class="num">05</span>Как я работаю</h2>
       <div class="about">
         <p>Решения проверяю двумя вопросами: что получает бизнес и что получает пользователь. Ищу вариант, где выигрывают оба.</p>
-        <p>Итог любой деловой встречи — договорённость. Умею договариваться с заказчиками, командой и партнёрами, в том числе за счёт опыта продаж.</p>
+        <p>Итог любой деловой встречи — договорённость. Умею договариваться с заказчиками, командой и партнёрами — восемь лет в продажах этому научили.</p>
         <p>Отвечаю за результат, а не за документ: довожу задачу до приёмки и смотрю, как изменились метрики.</p>
         <p>Учусь сам и быстро: от фронтенда в 2018-м до архитектуры решений в 2026-м.</p>
       </div>
@@ -441,10 +485,10 @@
       <h2 class="section__title" id="contacts-title"><span class="num">06</span>Контакты</h2>
       <p class="contacts__lead">Полная занятость: удалённо, гибрид или офис в Москве. Готов к командировкам.</p>
       <ul class="contact-list">
-        <li><span>Telegram</span><a href="https://t.me/nikita_sadovnikov">@nikita_sadovnikov</a></li>
-        <li><span>Почта</span><a href="mailto:n.s.sadovnikov@yandex.ru">n.s.sadovnikov@yandex.ru</a></li>
-        <li><span>GitHub</span><a href="https://github.com/nssadovnikov2">github.com/nssadovnikov2</a></li>
-        <li><span>Miro</span><a href="https://miro.com/app/board/uXjVNl6BcDE=/">артефакты аналитика</a></li>
+        <li><a href="https://t.me/nikita_sadovnikov"><span>Telegram</span>@nikita_sadovnikov</a></li>
+        <li><a href="mailto:n.s.sadovnikov@yandex.ru"><span>Почта</span>n.s.sadovnikov@yandex.ru</a></li>
+        <li><a href="https://github.com/nssadovnikov2"><span>GitHub</span>github.com/nssadovnikov2</a></li>
+        <li><a href="https://miro.com/app/board/uXjVNl6BcDE=/"><span>Miro</span>артефакты аналитика</a></li>
       </ul>
     </section>
   </main>
@@ -454,6 +498,6 @@
     <a href="#top">Наверх ↑</a>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
